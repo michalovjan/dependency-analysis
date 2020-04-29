@@ -275,6 +275,7 @@
     </dependencyManagement>
 
     <repositories>
+
         <repository>
             <id>eap</id>
             <url>http://maven.repository.redhat.com/techpreview/all</url>
@@ -294,6 +295,15 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
+
+        <repository>
+            <id>Nexus Staging</id>
+            <url>https://oss.sonatype.org/content/groups/staging</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
     </repositories>
 
     <build>
